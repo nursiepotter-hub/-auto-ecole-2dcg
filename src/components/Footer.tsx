@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 
 const socialLinks = [
+  { name: 'Facebook', url: 'https://www.facebook.com/share/1BkkSuJMh8/', icon: '📘' },
   { name: 'Instagram', url: 'https://www.instagram.com/autoecole2dcg?igsh=MWZhcjNmaG9sOW1tMg==', icon: '📸' },
   { name: 'TikTok', url: 'https://www.tiktok.com/@2d.consultinggroup?_r=1&_t=ZS-97ay6TTzde0', icon: '🎵' },
 ]
