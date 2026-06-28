@@ -18,13 +18,11 @@ const avantages = [
 export default function Home() {
   return (
     <>
-      <section className="relative min-h-[90vh] flex items-center bg-gradient-to-br from-ecole-blue via-blue-800 to-ecole-red/90 overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 text-8xl animate-float">🚗</div>
-          <div className="absolute top-40 right-20 text-6xl animate-float" style={{ animationDelay: '0.5s' }}>🏁</div>
-          <div className="absolute bottom-40 left-20 text-7xl animate-float" style={{ animationDelay: '1s' }}>🛣️</div>
+      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img src="/images/hero-car.jpg" alt="Voiture sur la route" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-ecole-blue/90 via-blue-900/80 to-ecole-red/70" />
         </div>
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,255,255,0.1),transparent_70%)]" />
 
         <div className="max-w-7xl mx-auto px-4 py-20 relative z-10">
           <div className="max-w-3xl animate-fade-in">
