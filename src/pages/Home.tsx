@@ -4,7 +4,7 @@ import { Shield, Users, Award, Clock, ChevronRight, Star } from 'lucide-react'
 const stats = [
   { value: '+500', label: 'Élèves formés' },
   { value: '95%', label: 'Taux de réussite' },
-  { value: '10+', label: 'Ans d\'expérience' },
+  { value: '10+', label: "Ans d'expérience" },
   { value: '4.9', label: 'Note moyenne' },
 ]
 
@@ -15,9 +15,16 @@ const avantages = [
   { icon: <Clock size={28} />, title: 'Horaires flexibles', desc: 'Cours adaptés à votre emploi du temps' },
 ]
 
+const galleryImages = [
+  '/images/galerie-1.jpg',
+  '/images/galerie-2.jpg',
+  '/images/galerie-3.jpg',
+]
+
 export default function Home() {
   return (
     <>
+      {/* Hero */}
       <section className="relative min-h-[90vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img src="/images/hero-photo.png" alt="Auto-école 2DCG" className="w-full h-full object-cover" />
@@ -61,6 +68,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Stats */}
       <section className="py-12 bg-white border-b border-gray-100">
         <div className="max-w-5xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((s, i) => (
@@ -72,32 +80,88 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-20 md:py-28 bg-gradient-to-b from-gray-50 to-white">
+      {/* Galerie sur l'accueil */}
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16 animate-fade-in">
-            <span className="inline-block bg-ecole-red/10 text-ecole-red px-4 py-2 rounded-full text-sm font-semibold mb-4">Pourquoi nous choisir ?</span>
-            <h2 className="section-title">L'excellence de la formation</h2>
-            <p className="section-subtitle">Des années d'expérience au service de votre réussite</p>
+          <div className="text-center mb-14 animate-fade-in">
+            <span className="inline-block bg-ecole-red/10 text-ecole-red px-4 py-2 rounded-full text-sm font-semibold mb-4">En images</span>
+            <h2 className="section-title">Notre auto-école en action</h2>
+            <p className="section-subtitle">Des cours pratiques et théoriques dans un cadre professionnel</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {avantages.map((a, i) => (
-              <div key={i} className="group glass-card p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 animate-fade-in" style={{ animationDelay: `${i * 0.1}s` }}>
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-ecole-red to-red-700 text-white flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-red-500/20">
-                  {a.icon}
-                </div>
-                <h3 className="text-lg font-bold text-ecole-blue mb-2">{a.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{a.desc}</p>
+          <div className="grid md:grid-cols-3 gap-6">
+            {galleryImages.map((img, i) => (
+              <div key={i} className="relative group rounded-2xl overflow-hidden shadow-xl aspect-[4/3] animate-fade-in" style={{ animationDelay: `${i * 0.1}s` }}>
+                <img src={img} alt={`Auto-école 2DCG - ${i + 1}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
               </div>
             ))}
+          </div>
+
+          <div className="text-center mt-8">
+            <Link to="/galerie" className="text-ecole-red hover:text-red-700 font-semibold inline-flex items-center gap-1 transition-colors">
+              Voir toute la galerie <ChevronRight size={18} />
+            </Link>
           </div>
         </div>
       </section>
 
-      <section className="py-20 bg-gradient-to-br from-ecole-blue via-blue-900 to-ecole-red/80 text-white relative overflow-hidden">
+      {/* Avantages avec image */}
+      <section className="py-20 md:py-28 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="animate-fade-in">
+              <span className="inline-block bg-ecole-red/10 text-ecole-red px-4 py-2 rounded-full text-sm font-semibold mb-4">Pourquoi nous choisir ?</span>
+              <h2 className="text-3xl md:text-5xl font-extrabold text-ecole-blue mb-6 leading-tight">
+                L'excellence de la formation
+              </h2>
+              <p className="text-gray-500 mb-8 max-w-lg">
+                Des années d'expérience au service de votre réussite. Nos moniteurs qualifiés vous accompagnent à chaque étape.
+              </p>
+
+              <div className="grid sm:grid-cols-2 gap-5">
+                {avantages.map((a, i) => (
+                  <div key={i} className="flex items-start gap-4 p-4 rounded-xl bg-gray-50 hover:bg-ecole-red/5 transition-colors">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-ecole-red to-red-700 text-white flex items-center justify-center shrink-0 shadow-md shadow-red-500/20">
+                      {a.icon}
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-ecole-blue">{a.title}</h3>
+                      <p className="text-gray-500 text-sm">{a.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="relative animate-fade-in">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <img src="/images/galerie-4.jpg" alt="Formation auto-école" className="w-full h-[500px] object-cover" />
+                <div className="absolute inset-0 bg-gradient-to-t from-ecole-blue/20 to-transparent" />
+              </div>
+              <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-5 flex items-center gap-3">
+                <div className="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center">
+                  <Award size={28} className="text-green-600" />
+                </div>
+                <div>
+                  <p className="font-bold text-ecole-blue">95% de réussite</p>
+                  <p className="text-gray-400 text-sm">au 1er essai</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA avec image de fond */}
+      <section className="relative py-24 overflow-hidden">
+        <div className="absolute inset-0">
+          <img src="/images/galerie-5.jpg" alt="" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-ecole-blue/90 via-blue-900/85 to-ecole-red/80" />
+        </div>
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(255,255,255,0.1),transparent_60%)]" />
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
-          <h2 className="text-3xl md:text-5xl font-extrabold mb-6 animate-fade-in">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-6 animate-fade-in">
             Prêt à prendre le volant ? 🚗
           </h2>
           <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
