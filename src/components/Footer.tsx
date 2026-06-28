@@ -29,7 +29,8 @@ export default function Footer() {
           <div>
             <h4 className="font-bold mb-4">Contact</h4>
             <ul className="space-y-2 text-blue-200 text-sm">
-              <li className="flex items-center gap-2">📍 Dakar, Sénégal</li>
+              <li className="flex items-center gap-2">📍 Guédiawaye Rond-Point Marché Jeudi</li>
+               <li className="flex items-center gap-2">📍 Keur Massar (en face de l'hôpital)</li>
               <li className="flex items-center gap-2">📱 +221 76 853 47 97 / 77 584 77 77</li>
               <li className="flex items-center gap-2">✉️ contact@2dcg.sn</li>
             </ul>

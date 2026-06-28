@@ -55,9 +55,21 @@ export default function Contact() {
           <div className="space-y-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <div className="glass-card p-8">
               <h3 className="text-xl font-bold text-ecole-blue mb-6">Nos coordonnées</h3>
-              <div className="space-y-5">
+              <div className="space-y-3 mb-6">
+                <p className="font-semibold text-gray-800 text-sm flex items-center gap-2"><MapPin size={16} className="text-ecole-red" /> Nos adresses</p>
+                <div className="grid gap-2">
+                  <div className="bg-gradient-to-r from-ecole-red/5 to-transparent rounded-xl p-3 border border-ecole-red/10">
+                    <p className="font-bold text-ecole-blue text-sm">Guédiawaye</p>
+                    <p className="text-gray-500 text-xs">Rond-Point Marché Jeudi</p>
+                  </div>
+                  <div className="bg-gradient-to-r from-ecole-blue/5 to-transparent rounded-xl p-3 border border-ecole-blue/10">
+                    <p className="font-bold text-ecole-blue text-sm">Keur Massar</p>
+                    <p className="text-gray-500 text-xs">En face de l'hôpital</p>
+                  </div>
+                </div>
+              </div>
+              <div className="space-y-4">
                 {[
-                  { icon: <MapPin size={20} />, title: 'Adresse', value: 'Dakar, Sénégal' },
                   { icon: <Phone size={20} />, title: 'Téléphone', value: '+221 76 853 47 97 / 77 584 77 77' },
                   { icon: <Mail size={20} />, title: 'Email', value: 'contact@2dcg.sn' },
                   { icon: <Clock size={20} />, title: 'Horaires', value: 'Lun-Ven: 8h-18h · Sam: 9h-13h' },
