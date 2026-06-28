@@ -1,9 +1,30 @@
-Progress tracked in `AGENTS.md` at project root. All 6 pages are now beautifully designed:
-- **Home**: Hero with gradient, animated emojis (🚗🏁🛣️), stats bar, advantage cards, CTA section
-- **Tarifs**: 3 pricing cards (Classique/Intensif/Accompagnée) with popular badge, checklists, WhatsApp CTA
-- **Moniteurs**: 3 instructor cards with avatar initial circles, experience badges, bio text
-- **Contact**: Left form (name/tel/select/textarea) + right column with coords cards + WhatsApp big button
-- **Avis**: Masonry-style review cards with star ratings, quotes, initials
-- **Galerie**: CSS columns masonry layout, click to fullscreen with prev/next navigation
+# 2DCG Auto-École — Session Summary
 
-All use custom utilities from `index.css` (`glass-card`, `btn-primary`, `section-title`, `animate-fade-in`, etc.) with red/white/blue theme. The site builds successfully.
+## Project
+- React + Vite + TypeScript + Tailwind CSS
+- **Colors**: Rouge (#dc2626), Blanc, Bleu (#1e40af)
+- **Deployed**: https://auto-ecole-2dcg.vercel.app
+- **Repo**: https://github.com/nursiepotter-hub/-auto-ecole-2dcg
+- **WhatsApp**: +221 76 853 47 97 (primary) / +221 77 584 77 77
+
+## Pages
+All 6 pages are polished with animations, glass cards, gradients, responsive design.
+- **Accueil** — Hero with emojis, stats bar, advantage cards, CTA section
+- **Tarifs** — 3 pricing cards (Classique 150k, Intensif 250k, Accompagnée 100k)
+- **Moniteurs** — 3 instructor cards with initials, experience badges, bios
+- **Contact** — Form + coords + WhatsApp CTA
+- **Avis** — Review cards with star ratings
+- **Galerie** — Masonry layout with fullscreen lightbox
+
+## Custom CSS Utilities (in index.css)
+- `btn-primary`, `btn-secondary`, `btn-outline`, `glass-card`, `section-title`, `section-subtitle`
+- Animations: `fade-in`, `slide-up`, `float`, `pulse-soft`
+- Colors: `ecole-red`, `ecole-blue`
+
+## Auto-deploy
+- Pushes to `main` on GitHub → Vercel auto-deploys
+
+## Remaining
+- Add a custom domain if needed
+- Add actual content (instructor names, photos, reviews, etc.)
+- Update `public/images/` with real photos

@@ -8,6 +8,7 @@ import Moniteurs from '@/pages/Moniteurs'
 import Contact from '@/pages/Contact'
 import Avis from '@/pages/Avis'
 import Galerie from '@/pages/Galerie'
+import Inscription from '@/pages/Inscription'
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/avis" element={<Avis />} />
             <Route path="/galerie" element={<Galerie />} />
+            <Route path="/inscription" element={<Inscription />} />
           </Routes>
         </main>
         <Footer />
