@@ -15,10 +15,10 @@ const avantages = [
   { icon: <Clock size={28} />, title: 'Horaires flexibles', desc: 'Cours adaptés à votre emploi du temps' },
 ]
 
-const galleryImages = [
-  '/images/galerie-1.jpg',
-  '/images/galerie-2.jpg',
-  '/images/galerie-3.jpg',
+const homeGallery = [
+  '/images/hero-accueil-1.png',
+  '/images/hero-accueil-2.png',
+  '/images/hero-photo.png',
 ]
 
 export default function Home() {
@@ -90,7 +90,7 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
-            {galleryImages.map((img, i) => (
+            {homeGallery.map((img, i) => (
               <div key={i} className="relative group rounded-2xl overflow-hidden shadow-xl aspect-[4/3] animate-fade-in" style={{ animationDelay: `${i * 0.1}s` }}>
                 <img src={img} alt={`Auto-école 2DCG - ${i + 1}`} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
