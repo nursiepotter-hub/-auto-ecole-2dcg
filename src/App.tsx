@@ -4,6 +4,7 @@ import ReactGA from 'react-ga4'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import WhatsAppButton from '@/components/WhatsAppButton'
+import SocialButtons from '@/components/SocialButtons'
 import Home from '@/pages/Home'
 import Tarifs from '@/pages/Tarifs'
 import Moniteurs from '@/pages/Moniteurs'
@@ -38,6 +39,7 @@ export default function App() {
           </Routes>
         </main>
         <Footer />
+        <SocialButtons />
         <WhatsAppButton />
       </div>
     </BrowserRouter>
