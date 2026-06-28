@@ -30,22 +30,22 @@ export default function Home() {
           <img src="/images/hero-photo.png" alt="Auto-école 2DCG" className="w-full h-full object-cover" />
         </div>
 
-        <div className="relative z-10 min-h-[90vh] grid lg:grid-cols-2">
-          <div className="flex items-center bg-gradient-to-r from-ecole-blue/95 via-ecole-blue/80 to-transparent px-4 py-20">
-            <div className="max-w-xl ml-auto mr-auto lg:mr-0 lg:ml-12 animate-fade-in">
+        <div className="relative z-10 min-h-[90vh] grid lg:grid-cols-[35%_65%]">
+          <div className="flex items-center bg-gradient-to-r from-ecole-blue/95 from-30% via-ecole-blue/40 via-60% to-transparent px-4 py-20">
+            <div className="max-w-md ml-auto mr-auto lg:mr-0 lg:ml-8 animate-fade-in">
               <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white border border-white/20 px-4 py-2 rounded-full text-sm font-semibold mb-6">
                 <span>🚗</span>
                 <span>Bienvenue à 2DCG Auto-École</span>
               </div>
 
-              <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">
+              <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-5">
                 Votre permis,{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-orange-400">
                   notre mission
                 </span>
               </h1>
 
-              <p className="text-xl md:text-2xl text-blue-100 mb-10 max-w-2xl">
+              <p className="text-lg md:text-xl text-blue-100 mb-8 max-w-xl">
                 Formation de qualité, moniteurs professionnels, accompagnement personnalisé — 
                 obtenez votre permis avec 2DCG à Dakar.
               </p>
