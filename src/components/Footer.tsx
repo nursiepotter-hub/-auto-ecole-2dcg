@@ -32,7 +32,7 @@ export default function Footer() {
               <li className="flex items-center gap-2">📍 Guédiawaye Rond-Point Marché Jeudi</li>
                <li className="flex items-center gap-2">📍 Keur Massar (en face de l'hôpital)</li>
               <li className="flex items-center gap-2">📱 +221 76 853 47 97 / 77 584 77 77</li>
-              <li className="flex items-center gap-2">✉️ contact@2dcg.sn</li>
+              <li className="flex items-center gap-2">✉️ permispourtous221@gmail.com</li>
             </ul>
           </div>
         </div>

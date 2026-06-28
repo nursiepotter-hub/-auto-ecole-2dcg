@@ -71,7 +71,7 @@ export default function Contact() {
               <div className="space-y-4">
                 {[
                   { icon: <Phone size={20} />, title: 'Téléphone', value: '+221 76 853 47 97 / 77 584 77 77' },
-                  { icon: <Mail size={20} />, title: 'Email', value: 'contact@2dcg.sn' },
+                  { icon: <Mail size={20} />, title: 'Email', value: 'permispourtous221@gmail.com' },
                   { icon: <Clock size={20} />, title: 'Horaires', value: 'Lun-Ven: 8h-18h · Sam: 9h-13h' },
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-4">
