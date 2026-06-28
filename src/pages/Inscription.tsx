@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { CheckCircle, Camera, Droplets, Heart, CreditCard, MapPin, Copy, Send, User, Phone, FileText } from 'lucide-react'
 
-const categories = ['Permis léger', 'Permis lourd', 'Transport']
+const categories = ['Moto', 'Poids léger', 'Poids lourd', 'Transport', 'Perfectionnement']
 
 const documents = [
   { icon: <Copy size={28} />, title: 'Copie CIN légalisée', note: 'Recto & verso' },

@@ -3,16 +3,39 @@ import { Link } from 'react-router-dom'
 
 const forfaits = [
   {
-    name: 'Classique',
+    name: 'Moto',
     price: '90 000 F',
+    icon: '🏍️',
     popular: false,
-    features: ['Cours de code illimités', '20h de conduite', 'Accompagnement examen', 'Véhicule fourni', 'Suivi personnalisé'],
+    features: ['Formation complète moto', 'Cours de code illimités', 'Conduite accompagnée', 'Véhicule fourni', 'Suivi personnalisé'],
   },
   {
-    name: 'Intensif',
-    price: '130 000 F',
+    name: 'Poids léger',
+    price: '90 000 F',
+    icon: '🚗',
     popular: true,
-    features: ['Cours de code intensifs', '30h de conduite', 'Accompagnement examen', 'Véhicule fourni', 'Horaires flexibles', 'Stage accéléré'],
+    features: ['Permis voiture', 'Cours de code illimités', '20h de conduite', 'Accompagnement examen', 'Suivi personnalisé'],
+  },
+  {
+    name: 'Poids lourd',
+    price: '130 000 F',
+    icon: '🚛',
+    popular: false,
+    features: ['Formation poids lourd', 'Cours de code intensifs', '30h de conduite', 'Accompagnement examen', 'Horaires flexibles'],
+  },
+  {
+    name: 'Transport',
+    price: '130 000 F',
+    icon: '🚌',
+    popular: false,
+    features: ['Permis transport', 'Cours de code intensifs', '30h de conduite', 'Accompagnement examen', 'Stage accéléré'],
+  },
+  {
+    name: 'Perfectionnement',
+    price: '50 000 F',
+    icon: '🎯',
+    popular: false,
+    features: ['Remise à niveau', 'Conduite accompagnée', 'Conseils personnalisés', 'Horaires flexibles'],
   },
 ]
 
@@ -26,7 +49,7 @@ export default function Tarifs() {
           <p className="section-subtitle">Des formules adaptées à tous les besoins</p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {forfaits.map((f, i) => (
             <div
               key={i}
@@ -41,7 +64,7 @@ export default function Tarifs() {
                 </div>
               )}
               <div className="mt-4">
-                <h3 className="text-2xl font-bold text-ecole-blue mb-2">{f.name}</h3>
+                <h3 className="text-2xl font-bold text-ecole-blue mb-2">{f.icon} {f.name}</h3>
                 <div className="my-6">
                   <span className="text-5xl font-extrabold text-ecole-red">{f.price}</span>
                 </div>
