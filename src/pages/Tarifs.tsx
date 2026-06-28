@@ -4,21 +4,15 @@ import { Link } from 'react-router-dom'
 const forfaits = [
   {
     name: 'Classique',
-    price: '150 000 F',
+    price: '90 000 F',
     popular: false,
     features: ['Cours de code illimités', '20h de conduite', 'Accompagnement examen', 'Véhicule fourni', 'Suivi personnalisé'],
   },
   {
     name: 'Intensif',
-    price: '250 000 F',
+    price: '130 000 F',
     popular: true,
     features: ['Cours de code intensifs', '30h de conduite', 'Accompagnement examen', 'Véhicule fourni', 'Horaires flexibles', 'Stage accéléré'],
-  },
-  {
-    name: 'Accompagnée',
-    price: '100 000 F',
-    popular: false,
-    features: ['Cours de code', '10h de conduite', 'Suivi personnalisé', 'Conseils pédagogiques', 'Flexibilité horaire'],
   },
 ]
 
@@ -32,7 +26,7 @@ export default function Tarifs() {
           <p className="section-subtitle">Des formules adaptées à tous les besoins</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
           {forfaits.map((f, i) => (
             <div
               key={i}
