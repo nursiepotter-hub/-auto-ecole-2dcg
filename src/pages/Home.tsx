@@ -136,7 +136,7 @@ export default function Home() {
 
             <div className="relative animate-fade-in">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <img src="/images/hero-accueil-2.png" alt="Formation auto-école" className="w-full h-[500px] object-cover" />
+                <img src="/images/excellence-photo.jpg" alt="Formation auto-école" className="w-full h-[500px] object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-ecole-blue/20 to-transparent" />
               </div>
               <div className="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-5 flex items-center gap-3">
