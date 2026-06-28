@@ -17,8 +17,8 @@ const avantages = [
 
 const homeGallery = [
   '/images/hero-accueil-1.png',
-  '/images/hero-accueil-2.png',
   '/images/hero-photo.png',
+  '/images/hero-accueil-2.png',
 ]
 
 export default function Home() {
