@@ -25,48 +25,46 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-[90vh] overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img src="/images/hero-photo.png" alt="Auto-école 2DCG" className="w-full h-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-r from-ecole-blue/90 via-blue-900/80 to-ecole-red/70" />
         </div>
 
-        <div className="relative z-10 min-h-[90vh] grid lg:grid-cols-[35%_65%]">
-          <div className="flex items-center bg-gradient-to-r from-ecole-blue/95 from-30% via-ecole-blue/40 via-60% to-transparent px-4 py-20">
-            <div className="max-w-md ml-auto mr-auto lg:mr-0 lg:ml-8 animate-fade-in">
-              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white border border-white/20 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                <span>🚗</span>
-                <span>Bienvenue à 2DCG Auto-École</span>
-              </div>
+        <div className="max-w-7xl mx-auto px-4 py-20 relative z-10">
+          <div className="max-w-3xl animate-fade-in">
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white border border-white/20 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+              <span>🚗</span>
+              <span>Bienvenue à 2DCG Auto-École</span>
+            </div>
 
-              <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-5">
-                Votre permis,{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-orange-400">
-                  notre mission
-                </span>
-              </h1>
+            <h1 className="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">
+              Votre permis,{' '}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-orange-400">
+                notre mission
+              </span>
+            </h1>
 
-              <p className="text-lg md:text-xl text-blue-100 mb-8 max-w-xl">
-                Formation de qualité, moniteurs professionnels, accompagnement personnalisé — 
-                obtenez votre permis avec 2DCG à Dakar.
-              </p>
+            <p className="text-xl md:text-2xl text-blue-100 mb-10 max-w-2xl">
+              Formation de qualité, moniteurs professionnels, accompagnement personnalisé — 
+              obtenez votre permis avec 2DCG à Dakar.
+            </p>
 
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link to="/tarifs" className="btn-primary text-lg shadow-xl shadow-red-500/30">
-                  Voir nos tarifs <ChevronRight size={20} />
-                </Link>
-                <Link to="/contact" className="btn-secondary text-lg">
-                  Nous contacter
-                </Link>
-              </div>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link to="/tarifs" className="btn-primary text-lg shadow-xl shadow-red-500/30">
+                Voir nos tarifs <ChevronRight size={20} />
+              </Link>
+              <Link to="/contact" className="btn-secondary text-lg">
+                Nous contacter
+              </Link>
+            </div>
 
-              <div className="flex items-center gap-2 mt-8 text-blue-200 text-sm">
-                <Star size={16} className="text-yellow-400 fill-yellow-400" />
-                <span className="font-semibold">4.9/5</span>
-                <span className="opacity-60">— Plus de 500 élèves formés</span>
-              </div>
+            <div className="flex items-center gap-2 mt-8 text-blue-200 text-sm">
+              <Star size={16} className="text-yellow-400 fill-yellow-400" />
+              <span className="font-semibold">4.9/5</span>
+              <span className="opacity-60">— Plus de 500 élèves formés</span>
             </div>
           </div>
-          <div />
         </div>
       </section>
 
