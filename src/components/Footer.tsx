@@ -1,5 +1,10 @@
 import { Link } from 'react-router-dom'
 
+const socialLinks = [
+  { name: 'Instagram', url: 'https://www.instagram.com/autoecole2dcg?igsh=MWZhcjNmaG9sOW1tMg==', icon: '📸' },
+  { name: 'TikTok', url: 'https://www.tiktok.com/@2d.consultinggroup?_r=1&_t=ZS-97ay6TTzde0', icon: '🎵' },
+]
+
 export default function Footer() {
   return (
     <footer className="bg-ecole-blue text-white py-12">
@@ -34,6 +39,13 @@ export default function Footer() {
               <li className="flex items-center gap-2">📱 +221 76 853 47 97 / 77 584 77 77</li>
               <li className="flex items-center gap-2">✉️ permispourtous221@gmail.com</li>
             </ul>
+            <div className="mt-4 flex gap-2">
+              {socialLinks.map(s => (
+                <a key={s.name} href={s.url} target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-lg bg-blue-800 hover:bg-ecole-red flex items-center justify-center text-sm transition-all hover:scale-110" title={s.name}>
+                  {s.icon}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
         <div className="border-t border-blue-800 pt-8 text-center text-blue-300 text-sm">
